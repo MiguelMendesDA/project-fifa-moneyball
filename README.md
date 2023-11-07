@@ -1,96 +1,60 @@
-# project-fifa-moneyball
-
-# Project details: FIFA - MoneyBall
-
-<!-- ![Project Banner: FIFA](https://education-team-2020.s3-eu-west-1.amazonaws.com/data-analytics/project+banners/fifa-project.jpg) -->
-
-## The challenge
-
-Perform an end-to-end analysis putting into practice what you have learned so far. You will apply statistical or machine learning techniques and present your results to the class.
-
-### Possible Outcomes
-
-- Rank players by market value.
-- Highlight the top players for their outstanding performances over a discrete season.
-- Decide when to transfer a player.
-- Decide the best replacement for a transferred player.
-
-> You might suggest your own outcomes. Check with instructional staff before committing to a new option.
-
-## Objectives
-
-- Ask interesting and thoughtful questions and find the data to answer them.
-- Focus on improving in areas that are hard for you or learning more about something with which you feel comfortable.
-- Apply the statistical and machine learning techniques we have learned.
-- Create useful and clear graphs.
-- Present your insights in a thoughtful, clear, and accurate way.
-
-## Dataset
-
-In this project, you will use the provided [fifa23_players_dataset](https://github.com/ta-data-pt-rmt/project-fifa-moneyball/blob/main/fifa_23_male.zip) dataset.
-
-Details about the dataset can be found here as well [kaggle description](https://www.kaggle.com/datasets/sanjeetsinghnaik/fifa-23-players-dataset/)
-
-In case you want to find more information on how each column relates to a player, take a look at this website [sofifa website](https://sofifa.com/player/252371)
-
-This data set includes:
-
-1. **EA Sports FIFA 23 Game** data:
-
-- Player Name
-- Club of the Player
-- League
-- Position
-- Pace
-- Shooting
-- Passing
-- Dribbling
-- Defending
-- Physical
-
-2. **Transfermarkt** extra info by player:
-
-- Date of Birth
-- Nationality
-- Height
-- Foot
-- Day Joined the current club
-- Day of Contract End
-- Market Value of the Player
-
-
-3. **ESPN FC** data from the past 5 years performance of each player
-
-- **GS:** Games Started
-- **SB:** Games Substituted
-- **G:** Goals Scored
-- **A:** Assists
-- **SH:** Shots
-- **SG:** Shots on Goal
-- **FC:** Fouls Committed
-- **FS:** Fouls Suffered
-- **YC:** Yellow Cards
-- **RC:** Red Cards
-
-## Instructions & Scope
-
-- You **must plan your project.** Creating a Kanban or using [Trello](https://trello.com/) or a similar app for a digital board is mandatory.
-- You **CAN'T CODE** until your project is planned.
-- Create a `*.gitignore*` file and include it in your repository.
-- As an optional you can include a linear regression as a way to answer question(s) on the data.
-
-## Deliverables
-
-- A well-commented Jupyter notebook with your analysis.
-- The final dataset after all cleaning and transformations.
-- Repository with your workflow + documentation + code.
-- Visual documentation of Kanban or Trello board link.
-
-## Tips & Tricks
-
-- Organize yourself (don't get lost!). Respect deadlines.
-- Ask for help but don't forget that Google is your friend.
-- Define a simple approach first. You never know how the data can betray you. :wink:
-- Document your work.
-- Learn about the problem and what research has been done before you.
-- Before making a graph, think about what you want to represent.
+README - Data Analysis for Ajax
+​
+​
+# Introduction
+In the world of sports, data analysis has become an integral part of decision-making for clubs like Ajax. Leveraging data and technology, we aim to manage our team effectively and make decisions that enhance the club's value. 
+​
+This README describes the objectives and how we achieve them.
+​
+# Main Goal
+Our primary objective is to identify and acquire a young player with great potential at a reasonable price. This player will add value to our club and contribute to our future success.
+​
+# Secondary Objectives
+- Explore the data to identify potential relationships between variables.
+- Group player types to better visualize important characteristics among them.
+- Examine if age correlates with the variables we've identified as important for our study.
+- Find a way to select the best player.
+​
+# Exploratory Analysis
+- Libraries and Data Clening
+​
+We begin by importing essential libraries for data analysis, such as pandas, matplotlib, seaborn, and numpy. We load the dataset "Fifa 23 Players Data.csv" and clean the column names to remove any inconsistencies.
+​
+- General Analysis of the Information
+We analyze player characteristics based on their positions. We categorize positions into broader player types (e.g., Defense, Midfield, Attack, Goalkeeper) and examine key performance attributes for each category.
+​
+- Correlation Among Numeric Columns
+We examine the correlation between numeric columns to understand relationships within the dataset.
+​
+- Analysis by Age: Potential, Value, and Overall
+We analyze the relationship between age and potential, value, and overall attributes. This analysis helps us identify young players with potential for acquisition.
+​
+- Prediction of Value Based on Age for Goalkeepers
+We create a predictive model to estimate the value of goalkeepers based on their age, assuming they play in a defensive position and have specific attributes.
+​
+# AJAX Analysis
+As part of our analysis, we explore our club, AJAX, to understand the current state of our team.
+​
+We retrieve player data for AJAX and calculate key statistics:
+    - Mean Age
+    - Mean Overall Rating
+    - Mean Potential
+    - Total Value of the Team
+    - Total Wage Cost
+​
+We also analyze our current squad to identify potential improvements and we created some insights. We've created various plots to visually represent the relationship between variables.
+​
+In the transfer market, some of our players were sold for the release clause. It was decided that the proceeds from these sales would be invested in acquiring a new player.
+​
+- Looking for the Best Player to Sign
+To find the best player to sign, we have several criteria:
+​
+    - Affordable wage
+    - Good potential
+    - Young age
+    - High rating
+    - Release clause.
+​
+​
+# Conclusion
+Our data analysis provides valuable insights for AJAX to make informed decisions regarding player acquisitions. By focusing on younger players with high potential, AJAX can build a more competitive team for the future. We have also explored the current status of our club and identified areas for potential improvement. This analysis will be instrumental in shaping our strategies and decisions.
